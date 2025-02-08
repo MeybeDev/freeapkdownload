@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,15 +12,18 @@
         }
 
         img {
-            width: 300px;
+            width: 50px;
             margin: 10px;
             border: 2px solid #ddd;
             border-radius: 8px;
+            position: relative; /* הוספתי position כדי שהקישורים לא יוסתרו */
         }
 
         .image-container {
             display: inline-block;
             margin: 20px;
+            position: relative; /* הוספתי position */
+            z-index: 2; /* לוודא שהקישורים לא מכוסים */
         }
 
         a {
@@ -31,6 +34,8 @@
             padding: 10px;
             border-radius: 5px;
             text-decoration: none;
+            z-index: 1; /* על הקישורים להיות מעל התמונות */
+            position: relative; /* הוספתי position */
         }
 
             a:hover {
@@ -39,37 +44,30 @@
     </style>
 </head>
 <body>
-    <h1>Free Premiun Apk </h1>
-
+    <h1>Free Premium Apk</h1>
     <div class="Youtube Premium">
-        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\logo.jpg" alt="Youtube Premium">
-        <a href="C:\Users\david\OneDrive\שולחן העבודה\Apks\Youtube Vanced" download>Youtube Premium</a>
+        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\YouTube-Vanced.webp" alt="Youtube Premium">
+        <a href="images/Youtube_Vanced.apk" download>Youtube Premium</a>
     </div>
-
     <div class="Truecaller">
-        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\logo.jpg" alt="Truecaller">
-        <a href="C:\Users\david\OneDrive\שולחן העבודה\Apks\Truecaller" download>Truecaller</a>
+        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\1.webp" alt="Truecaller">
+        <a href="images/Truecaller.apk" download>Truecaller</a>
     </div>
-
-    <div class="Youtube Premium">
-        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\logo.jpg" alt="Spotify">
-        <a href="C:\Users\david\OneDrive\שולחן העבודה\Apks\Spotify" download>Spotify </a>
+    <div class="Spotify">
+        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\2.webp" alt="Spotify">
+        <a href="images/Spotify.apk" download>Spotify</a>
     </div>
-
     <div class="CapCut-Video Editor">
-        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\logo.jpg" alt="CapCut-Video Editor">
-        <a href="C:\Users\david\OneDrive\שולחן העבודה\Apks\CapCut - Video Editor" download>CapCut-Video Editor</a>
+        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo\3.webp" alt="CapCut-Video Editor">
+        <a href="images/CapCut_Video_Editor.apk" download>CapCut-Video Editor</a>
     </div>
-
     <div class="image-container">
-        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo" alt="Image 5">
-        <a href="images/image5.jpg" download>comig soon</a>
+        <img src="images/Logo.png" alt="Image 5">
+        <a href="images/image5.jpg" download>Coming soon</a>
     </div>
-
     <div class="image-container">
-        <img src="C:\Users\david\OneDrive\שולחן העבודה\Apks\Logo" alt="Image 6">
-        <a href="images/image6.jpg" download>comig soon</a>
+        <img src="images/Logo.png" alt="Image 6">
+        <a href="images/image6.jpg" download>Coming soon</a>
     </div>
-
 </body>
 </html>
